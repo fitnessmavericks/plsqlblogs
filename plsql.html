@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>PL/SQL BLOG | PL/SQL</title>
+      
+      <link rel="icon" href="logo.jpg" sizes="80x60" type="image/jpg">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock">
+      
+      <style>
+           p{
+              font-family: 'Overlock';
+          }
+</style>
+         <style> 
+              p1{
+              font-family: 'Overlock';
+          }
+           </style> 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ </head>
+    <body style="background-color:bisque;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <nav>
+          <ul class="menu">
+          <li class="item button"><a href="signup.html"> Sign Up</a></li>
+           <li class="item button"><a href="signin.html"> Sign In</a></li>
+           <li class="item button"><a href="index1.html">Home </a></li>
+            <li class="item button"><a href="sql.html">SQL</a></li>
+              <li class="toggle"><span class="bars"></span>
+              </li>
+          </ul>
+      </nav>
+        
+        <h1 style="font-family:Dancing Script;font-size:300%; text-align: center">PL/SQL</h1>
+        
+        <div class=Sql>
+        
+            <p style="text-align:justify">
+PL/SQL stands for “Procedural Language extensions to the Structured Query Language”. SQL is a popular language for both querying and updating data in the relational database management systems (RDBMS). PL/SQL adds many procedural constructs to SQL language to overcome some limitations of SQL. Besides, PL/SQL provides a more comprehensive programming language solution for building mission-critical applications on Oracle Databases.<br>
+In addition to triggers that fire (and execute PL/SQL code) when data is modified, Oracle 10g supports triggers that fire when schema-level objects (that is, tables) are modified and when user logon or logoff events occur.
+<br>
+pl/sql architecture:<br>
+PL/SQL engine is in charge of compiling PL/SQL code into byte-code and executes the executable code. The PL/SQL engine can only be installed in an Oracle Database server or an application development tool such as Oracle Forms.
+
+Once you submit a PL/SQL block to the Oracle Database server, the PL/SQL engine collaborates with the SQL engine to compile and execute the code. PL/SQL engine runs the procedural elements while the SQL engine processes the SQL statements.
+
+Now you should have a basic understanding of PL/SQL programming language and its architecture. Let’s create the first working PL/SQL anonymous block.
+<br>
+PL/SQL-DATATYPES AND DESCRIPTIONS <br>
+1	
+Numeric
+
+Numeric values on which arithmetic operations are performed.<br>
+
+2	
+Character
+
+Alphanumeric values that represent single characters or strings of characters.<br>
+
+3	
+Boolean<br>
+
+Logical values on which logical operations are performed.<br>
+
+4	
+Datetime<br>
+
+Dates and times.<br>
+
+PL/SQL Numeric Data Types and Subtypes<BR>
+
+1<br>
+PLS_INTEGER<br>
+
+Signed integer in range -2,147,483,648 through 2,147,483,647, represented in 32 bits<br>
+
+2	<br>
+BINARY_INTEGER<br>
+
+Signed integer in range -2,147,483,648 through 2,147,483,647, represented in 32 bits<br>
+
+3	<br>
+BINARY_FLOAT<br>
+
+Single-precision IEEE 754-format floating-point number<br>
+
+4	<br>
+BINARY_DOUBLE<br>
+
+Double-precision IEEE 754-format floating-point number<br>
+
+5	
+NUMBER(prec, scale)<br>
+
+Fixed-point or floating-point number with absolute value in range 1E-130 to (but not including) 1.0E126. A NUMBER variable can also represent 0<br>
+
+6	<br>
+DEC(prec, scale)<br>
+
+ANSI specific fixed-point type with maximum precision of 38 decimal digits<br>
+
+7	<br>
+DECIMAL(prec, scale)<br>
+
+IBM specific fixed-point type with maximum precision of 38 decimal digits<br>
+
+8	<br>
+NUMERIC(pre, secale)<br>
+
+Floating type with maximum precision of 38 decimal digits<br>
+
+9	
+DOUBLE PRECISION<br>
+
+ANSI specific floating-point type with maximum precision of 126 binary digits (approximately 38 decimal digits)<br>
+
+10	<br>
+FLOAT<br>
+
+ANSI and IBM specific floating-point type with maximum precision of 126 binary digits (approximately 38 decimal digits)<br>
+
+11	
+INT<br>
+
+ANSI specific integer type with maximum precision of 38 decimal digits<br>
+
+12	
+INTEGER<br>
+
+ANSI and IBM specific integer type with maximum precision of 38 decimal digits<br>
+
+13	
+SMALLINT<br>
+
+ANSI and IBM specific integer type with maximum precision of 38 decimal digits<br>
+
+14<br>	
+REAL<br>
+
+Floating-point type with maximum precision of 63 binary digits (approximately 18 decimal digits)<br>
+
+
+Sum Of Two Numbers in PL/SQL<BR>
+
+In PL/SQL code groups of commands are arranged within a block. A block group related declarations or statements.<br>
+In declare part, we declare variables and between begin and end part, we perform the operations.<BR>
+
+Here, first, we take three variables x, y, and z and assign the value in x and y and after addition of both the numbers, we assign the resultant value to z and print z.<br>
+
+Examples:<br>
+
+Input : 15 25<br>
+Output : 40<br>
+Input : 250 400<br>
+Output : 650<br>
+
+Reverse a number in PL/SQL <br>
+
+In PL/SQL code groups of commands are arranged within a block. A block group related declarations or statements.<br>
+In declare part, we declare variables and between begin and end part, we perform the operations.<br>
+
+Explanation:<br>
+Consider the example, input = 12345.<br>
+Step 1 : mod(12345,10) = 5<br>
+rev:= 0*10 + 5 = 5<br>
+num = floor(12345/10) = 1234<br>
+
+Step 2 : mod(1234,10) = 4<br>
+rev:= 5*10 + 4 = 54<br>
+num = floor(1234/10) = 123<br>
+
+Step 3 : mod(123,10) = 3<br>
+rev:= 54*10 + 3 = 543<br>
+num = floor(123/10) = 12<br>
+
+Step 4 : mod(12,10) = 2<br>
+rev:= 543*10 + 2 = 5432<br>
+num = floor(12/10) = 1<br>
+
+Step 5 : mod(1,10) = 1<br>
+rev:= 5432*10 + 1 = 54321<br>
+num = floor(1/10) = 0<br>
+in step 5, num =0 which doesn’t satisfy the while condition and loop terminates.<br>
+
+rev = 54321<br>
+
+
+PL/SQL - Object Oriented<BR>
+
+PL/SQL allows defining an object type, which helps in designing object-oriented database in Oracle. An object type allows you to create composite types. Using objects allow you to implement real world objects with specific structure of data and methods for operating it. Objects have attributes and methods. Attributes are properties of an object and are used for storing an object's state; and methods are used for modeling its behavior.<BR>
+
+
+Objects are created using the CREATE [OR REPLACE] TYPE statement. Following is an example to create a simple address object consisting of few attributes −<BR>
+
+Member Methods<br>
+Member methods are used for manipulating the attributes of the object. You provide the declaration of a member method while declaring the object type. The object body defines the code for the member methods. The object body is created using the CREATE TYPE BODY statement.<br>
+
+Constructors are functions that return a new object as its value. Every object has a system defined constructor method. The name of the constructor is same as the object type. For example −<br>
+
+residence := address('103A', 'M.G.Road', 'Jaipur', 'Rajasthan','201301'); <br>
+
+Inheritance for PL/SQL Objects<br>
+PL/SQL allows creating object from the existing base objects. To implement inheritance, the base objects should be declared as NOT FINAL. The default is FINAL.<br>
+
+The following programs illustrate the inheritance in PL/SQL Objects. Let us create another object named TableTop, this is inherited from the Rectangle object. For this, we need to create the base rectangle object<br>
+
+Abstract Objects in PL/SQL<br>
+The NOT INSTANTIABLE clause allows you to declare an abstract object. You cannot use an abstract object as it is; you will have to create a subtype or child type of such objects to use its functionalities.<br>
+
+For example,
+CREATE OR REPLACE TYPE rectangle AS OBJECT <br>
+(length number, <br>
+ width number, <br>
+ NOT INSTANTIABLE NOT FINAL MEMBER PROCEDURE display) <br> 
+ NOT INSTANTIABLE NOT FINAL <br>
+/
+
+DBMS_OUTPUT Subprograms<br>
+The DBMS_OUTPUT package has the following subprograms −<br>
+
+S.No	Subprogram & Purpose<br>
+1	<br>
+DBMS_OUTPUT.DISABLE;<br>
+
+Disables message output.<br>
+
+2	
+DBMS_OUTPUT.ENABLE(buffer_size IN INTEGER DEFAULT 20000);<br>
+
+Enables message output. A NULL value of buffer_size represents unlimited buffer size.<br>
+
+3	
+DBMS_OUTPUT.GET_LINE (line OUT VARCHAR2, status OUT INTEGER);<br>
+
+Retrieves a single line of buffered information.<br>
+
+4	
+DBMS_OUTPUT.GET_LINES (lines OUT CHARARR, numlines IN OUT INTEGER);<br>
+
+Retrieves an array of lines from the buffer.<br>
+
+5	
+DBMS_OUTPUT.NEW_LINE;<br>
+
+Puts an end-of-line marker.<br>
+
+6	
+DBMS_OUTPUT.PUT(item IN VARCHAR2);<br>
+
+Places a partial line in the buffer.<br>
+
+7	
+DBMS_OUTPUT.PUT_LINE(item IN VARCHAR2);<br>
+
+Places a line in the buffer.<br>
+
+
+
+
+            </p>
+        </div>
+    </body>
+</html>
+    

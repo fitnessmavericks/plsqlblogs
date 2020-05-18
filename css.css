@@ -1,0 +1,195 @@
+ @import url('https://fonts.googleapis.com/css?family=Forum');
+ @import url('https://fonts.googleapis.com/css?family=Dancing Script');
+ @import url('https://fonts.googleapis.com/css?family=Overlock');
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:ghostwhite;
+    font-family:cursive;
+    z-index: 2;
+}
+nav{
+    background:black ;
+    padding:0px 2px;
+    margin: 0px;
+    z-index:2;
+    position:relative;
+    top:0px;
+ 
+}
+ul{
+    list-style-type:none;
+    z-index: 2;
+}
+a{
+    color: black;
+    text-decoration:none;
+    z-index: 2;
+}
+a:hover{
+    text-decoration:none;
+    z-index: 2;
+}
+.menu li{
+    font-size:28px;
+    padding:15px 5px;
+    z-index: 2;
+}
+.menu li a{
+    display:block;
+       color:ghostwhite;
+    font-family:'Forum' , serif;
+    z-index: 2;
+
+}
+.logo a{
+    font-size:20px;
+     z-index: 2;
+}
+.button{
+    border-bottom: none;
+    padding: 5px 5px;
+    z-index: 2;
+}
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:baseline;
+    z-index: 2;
+}
+.toggle{
+    cursor:grabbing;
+    z-index: 2;
+    
+}
+
+p1 {
+    position: absolute;
+    top: 40%;
+    right:12%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rouge Script", sans-serif;
+    font-size: 5.0em;
+    color: black;
+    font-weight: bold;
+    z-index: 10;
+}
+p2 {
+    position: absolute;
+    top: 50%;
+    right:18%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rouge Script", sans-serif;
+    font-size: 4.5em;
+    color:black;
+    font-weight: bold;
+    z-index: 2;
+}
+p3 {
+    position: absolute;
+    top: 60%;
+    right:9%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rouge Script", sans-serif;
+    font-size: 5.0em;
+    color: black;
+    font-weight: bold;
+    z-index: 10;
+}
+.column {
+  display: block;
+  margin-left: 0px;
+  margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: px;
+  width: 50%;
+    height: 50%;
+    z-index: 10;
+    top: 500px;
+    left: 70px;
+}
+.circle {
+  display: block;
+    opacity: .5;
+    z-index: 2;
+}
+.nav{
+	z-index:0;
+	padding:2.5%;
+	background-color: bisque;
+	margin-left: auto;
+	margin-bottom:70px;
+	position: absolute;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    border-radius: 15px;
+    opacity: 0.9;
+    font-family: 'Overlock';
+    font-size: 120%;
+    align-items: center;
+    align-content: space-between;
+}
+form {
+  text-align: left;
+}
+.nav {
+  width: 500px;
+  clear: both;
+}
+
+.nav input {
+  width: 100%;
+  clear: both;
+}
+.nav h1{
+    display:block;
+    color:black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 400%;
+    text-align: center;
+    top: 1000px;
+    bottom: 150px;
+    margin-bottom: 35px;
+    margin-top: 120px;
+
+}
+.nav .untilted{
+    display:block;
+    color:black;
+    font-family: 'Overlock',serif;
+    font-size: 100%;
+    text-align: center;
+
+}
+div.SQL{
+    
+    display:block;
+    color:black;
+    font-family: 'Overlock',serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
